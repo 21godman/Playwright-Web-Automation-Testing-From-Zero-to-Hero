@@ -12,7 +12,6 @@ test('navigate to form page', async ({ page }) => {
     await pm.navigateTo().smartTablePage()
     await pm.navigateTo().toastrPage()
     await pm.navigateTo().tooltipPage()
-    await page.pause()
 })
 
 test('parameterized methods', async ({ page }) => {
@@ -23,5 +22,4 @@ test('parameterized methods', async ({ page }) => {
     await pm.navigateTo().datepickerPage()
     await pm.onDatepickerPage().selectCommonDatepickerDateFromToday(90)
     await pm.onDatepickerPage().selectDatepickerWithRangeFromToday(10, 20)
-    await page.pause()
 })
